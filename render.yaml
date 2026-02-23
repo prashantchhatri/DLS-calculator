@@ -3,7 +3,7 @@ services:
     name: cricket-dls-pro
     runtime: docker
     plan: free
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: Dockerfile
     healthCheckPath: /
     autoDeploy: true
     envVars:
