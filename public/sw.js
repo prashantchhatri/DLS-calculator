@@ -1,8 +1,7 @@
-const STATIC_CACHE = 'dls-static-v1';
-const RUNTIME_CACHE = 'dls-runtime-v1';
+const STATIC_CACHE = 'dls-static-v2';
+const RUNTIME_CACHE = 'dls-runtime-v2';
 
 const STATIC_ASSETS = [
-    '/',
     '/offline.html',
     '/manifest.webmanifest',
     '/icons/icon-192.png',

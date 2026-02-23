@@ -32,7 +32,20 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-if ('serviceWorker' in navigator) {
+const isLocalhost = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
+
+if ('serviceWorker' in navigator && isLocalhost) {
+    window.addEventListener('load', async () => {
+        try {
+            const registrations = await navigator.serviceWorker.getRegistrations();
+            await Promise.all(registrations.map((registration) => registration.unregister()));
+        } catch (error) {
+            console.error('Service worker cleanup failed on localhost:', error);
+        }
+    });
+}
+
+if ('serviceWorker' in navigator && !isLocalhost) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js').catch((error) => {
             console.error('Service worker registration failed:', error);

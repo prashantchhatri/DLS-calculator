@@ -48,9 +48,12 @@
             }
 
             .theme-light .cricket-theme .theme-panel,
+            .theme-light .cricket-theme .bg-slate-950\/60,
+            .theme-light .cricket-theme .bg-slate-950\/65,
             .theme-light .cricket-theme .bg-slate-950\/70,
             .theme-light .cricket-theme .bg-slate-950\/75,
-            .theme-light .cricket-theme .bg-slate-950\/80 {
+            .theme-light .cricket-theme .bg-slate-950\/80,
+            .theme-light .cricket-theme .bg-slate-900\/45 {
                 background-color: rgba(255, 255, 255, 0.88);
             }
 
@@ -68,6 +71,32 @@
 
             .theme-light .cricket-theme .text-emerald-300 {
                 color: rgb(21 128 61);
+            }
+
+            .theme-light .cricket-theme p,
+            .theme-light .cricket-theme h1,
+            .theme-light .cricket-theme h2,
+            .theme-light .cricket-theme h3,
+            .theme-light .cricket-theme h4,
+            .theme-light .cricket-theme td,
+            .theme-light .cricket-theme th {
+                color: rgb(15 23 42);
+            }
+
+            .theme-light .cricket-theme label span,
+            .theme-light .cricket-theme .text-cyan-200\/80,
+            .theme-light .cricket-theme .text-cyan-200\/75,
+            .theme-light .cricket-theme .text-cyan-200,
+            .theme-light .cricket-theme .text-amber-200\/80,
+            .theme-light .cricket-theme .text-amber-200\/75 {
+                color: rgb(30 41 59);
+            }
+
+            .theme-light .cricket-theme input,
+            .theme-light .cricket-theme select,
+            .theme-light .cricket-theme textarea {
+                color: rgb(15 23 42);
+                border-color: rgba(148, 163, 184, 0.55);
             }
         </style>
 
@@ -88,6 +117,10 @@
         <main>
             @yield('content')
         </main>
+
+        <footer class="border-t border-slate-300/60 bg-white/80 px-4 py-3 text-center text-xs text-slate-700 dark:border-slate-800 dark:bg-slate-950/80 dark:text-slate-300">
+            This app is created by Prashant Chhatri for fun. It can also be used in local matches for basic calculations to help decide a winner if a match is interrupted by rain or other situations.
+        </footer>
 
         @livewireScripts
     </body>
