@@ -7,17 +7,17 @@ use Livewire\Component;
 
 class NrrPredictor extends Component
 {
-    public string $currentNrr = '-0.352';
+    public string $currentNrr = '-3.8';
 
-    public int $matchesPlayed = 5;
+    public int $matchesPlayed = 1;
 
-    public int $totalRunsScored = 812;
+    public int $totalRunsScored = 111;
 
-    public string $totalOversFaced = '98.4';
+    public string $totalOversFaced = '18.5';
 
-    public int $totalRunsConceded = 845;
+    public int $totalRunsConceded = 187;
 
-    public string $totalOversBowled = '100.0';
+    public string $totalOversBowled = '20.0';
 
     public string $upcomingMatchFormat = 't20';
 
@@ -44,12 +44,12 @@ class NrrPredictor extends Component
 
     public function loadExample(): void
     {
-        $this->currentNrr = '-0.352';
-        $this->matchesPlayed = 5;
-        $this->totalRunsScored = 812;
-        $this->totalOversFaced = '98.4';
-        $this->totalRunsConceded = 845;
-        $this->totalOversBowled = '100.0';
+        $this->currentNrr = '-3.8';
+        $this->matchesPlayed = 1;
+        $this->totalRunsScored = 111;
+        $this->totalOversFaced = '18.5';
+        $this->totalRunsConceded = 187;
+        $this->totalOversBowled = '20.0';
         $this->upcomingMatchFormat = 't20';
         $this->expectedOvers = '20.0';
         $this->targetNrr = '0.0';
